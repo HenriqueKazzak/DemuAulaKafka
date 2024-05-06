@@ -18,4 +18,7 @@ public class ChavePix {
     @JsonProperty("chaveDestino")
     private String chaveOrigem;
 
+    @JsonProperty("valor")
+    private double valor;
+
 }

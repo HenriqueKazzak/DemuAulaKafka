@@ -46,9 +46,6 @@ public class KafkaConfig {
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
-        configProps.put(JsonSerializer.TYPE_MAPPINGS,
-                "chavePix:com.kazzak.demokafkaproducer.model.ChavePix," +
-                "contaBancaria:com.kazzak.demokafkaproducer.model.ContaBancaria");
         return configProps;
     }
 }
